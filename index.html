@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lodge a Complaint</title>
+    <title>Anti-Ragging Complaint Portal</title>
     <link rel="stylesheet" href="styles.css">
-
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,8 +14,7 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-
-        header {
+	header {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/hero-background.jpg') no-repeat center center/cover;
             color: #fff;
             padding: 30px;
@@ -24,6 +22,7 @@
             position: relative;
             border-bottom: 5px solid #007BFF;
         }
+       
 
         .logo-container {
             position: absolute;
@@ -76,17 +75,95 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
+        .hero {
             text-align: center;
+            padding: 30px 0;
             margin-bottom: 20px;
         }
 
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 0 0 30px;
+        }
+
+        .button {
+            background-color: #FFC107;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #FF9800;
+        }
+
+        .guidelines {
+            background-color: #f9f9f9;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .guidelines h2 {
+            margin: 0 0 20px;
+        }
+
+        .guidelines ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .guidelines li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 10px;
+            background: #ffffff;
+            border-left: 5px solid #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .guidelines li:hover {
+            background-color: #f1f1f1;
+        }
+
+        .guidelines .icon {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .features {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .features .feature {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .features img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .features h3 {
+            font-size: 1.8em;
+            margin: 0 0 10px;
+        }
+
+        .features p {
+            font-size: 1.1em;
+            margin: 0;
         }
 
         footer {
@@ -96,8 +173,9 @@
             padding: 10px;
             margin-top: 20px;
         }
+	    /* Responsive Design for Mobiles (max-width: 480px) */
         @media (max-width: 480px) {
-	 header h1 {
+            header h1 {
                     font-size: 1rem; /* Adjust font size as needed */
                     line-height: 1.2;  /* Adjust line spacing */
                     margin: 20px 0;     /* Reduce top and bottom margins */
@@ -153,13 +231,14 @@
             .features p {
                 font-size: 1em;
             }
-    }
+        }
 
-    /* Make images responsive */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
     </style>
 </head>
 
@@ -170,6 +249,7 @@
         </div>
         <h1>Anti-Ragging Complaint Portal</h1>
         <h1>Haldia Institute of Technology</h1>
+
     </header>
 
     <nav>
@@ -177,14 +257,50 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="complaint.html">Lodge a Complaint</a></li>
             <li><a href="login.html">Members Area</a></li>
-           <!-- <li><a href="report.html">Report Status</a></li> -->
-            <li><a href="member.html">Committee Member</a></li>
+            <!-- <li><a href="report.html">Report Status</a></li> -->
+	    <li><a href="member.html">committee Member</a></li>
         </ul>
     </nav>
 
     <div class="content">
-        <h2>Members Area</h2>
-        <iframe src="https://script.google.com/macros/s/AKfycbwK7oC5iiaaGrhpNr6vpxR_EZExEv1G3IutvTWBgFpRkyZJeZD1stIQGEnOlMll6wi1uw/exec"></iframe>
+        <section class="hero">
+            <h2>Welcome to the Anti-Ragging Complaint Portal</h2>
+            <p>Dedicated to ensuring a safe and respectful environment for all students.</p>
+            <a href="complaint.html" class="button">Lodge a Complaint</a>
+        </section>
+<!--
+        <section class="guidelines">
+            <div class="container">
+                <h2>AICTE Recommended Guidelines</h2>
+                <ul>
+                    <li><img src="image/confidential-icon.png" alt="Confidential Reporting" class="icon"> Ensure strict compliance with anti-ragging measures.</li>
+                    <li><img src="image/quick-resolution.png" alt="Quick Resolution" class="icon"> Provide clear and accessible channels for lodging complaints.</li>
+                    <li><img src="image/support.png" alt="Support and Guidance" class="icon"> Maintain confidentiality and take immediate action on complaints.</li>
+                    <li><img src="training-icon.png" alt="Training" class="icon"> Regularly train staff and students on anti-ragging policies.</li>
+                    <li><img src="awareness-icon.png" alt="Awareness" class="icon"> Promote awareness about the consequences of ragging.</li>
+                </ul>
+            </div>
+        </section>
+-->
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <img src="image/confidential-icon.png" alt="Confidential Reporting">
+                    <h3>Confidential Reporting</h3>
+                    <p>Your complaints will be handled with strict confidentiality to ensure your safety and privacy.</p>
+                </div>
+                <div class="feature">
+                    <img src="image/quick-resolution.png" alt="Quick Resolution">
+                    <h3>Quick Resolution</h3>
+                    <p>We aim to resolve all complaints promptly and take appropriate action against perpetrators.</p>
+                </div>
+                <div class="feature">
+                    <img src="image/support.png" alt="Support and Guidance">
+                    <h3>Support and Guidance</h3>
+                    <p>Our squad is here to offer support and guidance throughout the process of resolving your complaint.</p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -192,7 +308,7 @@
     <p style="font-size: 0.9em; color: #666;">
         Developed and maintained by <strong>Prof. Rajesh Mukherjee, Dept. of CSE</strong>.
     </p>
-  </footer>
+   </footer>
 </body>
 
 </html>
